@@ -9,3 +9,4 @@ chef_server_url          "https://api.opscode.com/organizations/srinivas_nd"
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks"]
+encrypted_data_bag_secret "#{current_dir}/encrypted_data_bag_secret"
