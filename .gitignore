@@ -7,8 +7,6 @@
 .rvmrc
 .rbenv-version
 
-# Vagrant
-.vagrant
 # Emacs
 *~
 \#*\#
@@ -52,4 +50,3 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
-.vagrant

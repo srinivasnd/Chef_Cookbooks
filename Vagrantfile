@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 
   # This can be set to the host name you wish the guest machine to have. Vagrant
   # will automatically execute the configuration necessary to make this happen.
-  config.vm.hostname = "devops-starter"
+  config.vm.hostname = "srinivas-nd-starter"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -46,13 +46,13 @@ Vagrant.configure("2") do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  config.vm.provider :virtualbox do |vb|
+  # config.vm.provider :virtualbox do |vb|
   #   # Don't boot with headless mode
-  vb.gui = true
+  #   vb.gui = true
   #
   #   # Use VBoxManage to customize the VM. For example to change memory:
   #   vb.customize ["modifyvm", :id, "--memory", "1024"]
-  end
+  # end
   #
   # View the documentation for the provider you're using for more
   # information on available options.
@@ -75,9 +75,9 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).
   #
-  #config.vm.provision :chef_client do |chef|
-  # chef.chef_server_url = "https://api.opscode.com/organizations/srinivas_nd"
-  #chef.validation_client_name = "srinivas_nd-validator"
-  #chef.validation_key_path = ".chef/srinivas_nd-validator.pem"
-  #end
+  # config.vm.provision :chef_client do |chef|
+  #   chef.chef_server_url = "https://api.opscode.com/organizations/srinivas_nd"
+  #   chef.validation_client_name = "srinivas_nd-validator"
+  #   chef.validation_key_path = ".chef/srinivas_nd-validator.pem"
+  # end
 end
